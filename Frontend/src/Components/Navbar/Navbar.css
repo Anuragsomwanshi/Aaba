@@ -1,0 +1,51 @@
+.nav{
+    height: 4rem;
+    border-bottom: 2px solid;
+   
+   
+    
+}
+.navmenu{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+   
+    
+    
+}
+.logo{
+    text-decoration: none;
+    font-size: 34px;
+    color:orangered;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.navmenu .menu{
+    text-decoration: none;
+    transition: 0.2s;
+
+}
+.active{
+    background-color: orangered;
+    color: white;
+    padding: 7px;
+}
+
+
+.btnsign{
+    
+    width: 100px;
+    height: 40px;
+    border: none;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+.btnsign:hover{
+    background-color: orangered;
+    color: white;
+}
+.logo:hover{
+    transform: scale(1.6);
+}

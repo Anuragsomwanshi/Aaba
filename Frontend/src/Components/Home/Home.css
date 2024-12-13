@@ -1,0 +1,29 @@
+.Home{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.heroimg{
+    width: 100vw;
+    height: 100vh;
+}
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 255, 0.31);
+    z-index: 0;
+    position: absolute;
+    top: 4rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.wrap button{
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    background: white;
+    overflow: hidden;
+    position: relative;
+    top: 70%;
+}
