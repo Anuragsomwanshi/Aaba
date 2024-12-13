@@ -1,16 +1,8 @@
-import About from "./Components/About/About"
-import Home from "./Components/Home/Home"
+import React from 'react'
 
-
-function App() {
-  
-
+const App = () => {
   return (
-    <div>
-      <Home/>
-      <About/>
-      
-    </div>
+    <div>App</div>
   )
 }
 
