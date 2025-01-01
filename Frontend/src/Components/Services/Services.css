@@ -1,3 +1,41 @@
 .Services{
-    height: 100vh;
+    
+    background-color: rgb(224, 197, 197);
+}
+.Services h1{
+    text-align: center;
+}
+.category{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.container_category{
+   
+overflow: hidden;
+}
+.container_category img{
+    width: 150px;
+    height: 150px;
+}
+
+
+.serimg{
+    width: 18rem;
+    height: 18rem;
+    box-shadow: 3px 4px 5px;
+}
+
+.activecategory{
+    border: 5px solid orangered;
+}
+
+.servicecontainer{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+     margin-top: 3rem;
+     row-gap: 50px;
+     position: relative;
+     left: 2rem;
 }

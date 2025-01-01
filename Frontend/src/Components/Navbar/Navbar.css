@@ -21,16 +21,22 @@
     font-weight: 600;
     transition: 0.5s;
 }
+.cart{
+    width: 50px;
+    cursor: pointer;
+}
 .navmenu .menu{
     text-decoration: none;
-    transition: 0.2s;
+    
 
 }
-.active{
-    background-color: orangered;
-    color: white;
-    padding: 7px;
+.navmenu .menu:hover{
+    
+
+    
+    border-bottom: 2px solid orangered;
 }
+
 
 
 .btnsign{
@@ -47,5 +53,5 @@
     color: white;
 }
 .logo:hover{
-    transform: scale(1.6);
+    transform: scale(1.3);
 }
