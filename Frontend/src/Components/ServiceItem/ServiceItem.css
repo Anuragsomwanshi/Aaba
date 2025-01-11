@@ -1,0 +1,42 @@
+.serimg{
+    width:18rem;
+    box-shadow: 0px 0px 7px black;
+    height: 18rem;
+    
+    
+    
+}
+.ser-item{
+    margin: 20px;
+    transition: 0.5s;
+
+}
+.ser-item:hover{
+   transform: scale(1.1);
+}
+
+.nameprice{
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 22px;
+    font-weight: 700;
+    
+}
+
+.nameprice .price{
+    color: orangered;
+    font-size: 28px;
+    font-weight: bold;
+}
+.add{
+   position: relative;
+   right: 50px;
+   bottom: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.add:active{
+    transform: scale(1.2);
+}

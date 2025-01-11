@@ -4,18 +4,20 @@ import { Link } from 'react-router-dom'
 import Cart from '../../assets/Cart.jpg'
 
 
-const Navbar = () => {
+const Navbar = ({setLogin}) => {
 
   return (
     <div className='nav'>
       <div className="navmenu">
-            <Link to='/' className='logo'>Aaba</Link>
-            < a href='#Home' onClick={()=>setMenu('Home')}  className= 'menu'>Home</a>
-            <a href='#About' onClick={()=>setMenu('About')}  className='menu'>About</a>
-            <a href='#Services' onClick={()=>setMenu('Services')}  className= 'menu'>Services</a>
-            <a href='#Contact' onClick={()=>setMenu('Contact')}  className='menu'>Contact</a>
-            <img className='cart' src={Cart} alt="" />
-            <button className='btnsign'> <a href="#Contact"></a>SignIn</button>
+
+          
+             <a href='/' className='logo'>Aaba</a>
+            < a href='/' className= 'menu'>Home</a>
+            <a href='#About'  className='menu'>About</a>
+            <a href='#Services'  className= 'menu'>Services</a>
+            <a href='#Contact'  className='menu'>Contact</a>
+             <Link to={'/cart'}><img className='cartimg'  src={Cart} alt="" /></Link>
+            <button onClick={()=> setLogin(true)} className='btnsign'>LogIn</button>
         
         </div>
 

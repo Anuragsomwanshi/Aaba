@@ -1,27 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import './App.css'
-import Home from './Components/Home/Home'
+import Home from './Pages/Home/Home'
 import About from './Components/About/About'
 import Services from './Components/Services/Services'
 import Contact from './Components/Contact/Contact'
-import { Route, Router, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Cart from './Pages/Cart/Cart'
+import LogIn from './Components/LogIn/LogIn'
+import Footer from './Components/Footer/Footer'
+
+
 
 const App = () => {
+
+  const [Login,setLogin] = useState(false);
+
   return (
-    <div>
-      <Navbar/>
+
+    <> 
+    {Login?<LogIn setLogin={setLogin}/>:<></>}
+       <div className='app'>
+      <Navbar  setLogin={setLogin} Login = {Login} />
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/Cart'element={<Cart/>}/>
-        <Route path='/order' />
+        <Route path='/cart'element={<Cart/>}/>
+        
       </Routes>
+      <Footer/>
       
-      <About/>
-      <Services/>
-      <Contact/>
+     
     </div>
+    </>
+
   )
 }
 

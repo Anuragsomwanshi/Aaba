@@ -1,19 +1,47 @@
-import React, { createContext, useState} from "react";
+import React, { createContext, useEffect, useState} from "react";
 import { services } from "../../assets/assets";
 
 export const StoreContext =  createContext(null);
 
 const StoreContextProvider = (props) =>{
 
-    const [category, setCategory] = useState('All');
+
+    const [cartItems,setCartItems] = useState({});
+    
+
+
+const addcart = (itemId)=>{
+    if(!cartItems[itemId]){
+        setCartItems((prev)=>({...prev,[itemId]:1}))
+    }
+
+}
+
+ const removecart =  (itemId)=>{
+    setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
+ }
+
+ 
+
+ useEffect(()=>{
+
+    console.log(cartItems)
+
+ },[cartItems])
+
+ 
+
     
 
 
 
     const contextValue = {
         services,
-        category,
-        setCategory
+        cartItems,
+        setCartItems,
+        addcart,
+        removecart,
+        
 
     }
 

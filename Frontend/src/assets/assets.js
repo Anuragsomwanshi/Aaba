@@ -29,6 +29,12 @@ import wetshave from './wetshave.jpg'
 import clockbeard from './0clockbeard.jpg'
 import anchorbeard from './anchorbeard.jpg'
 
+import add from './add.jpg'
+export default add;
+
+
+
+
 
 
 
@@ -76,7 +82,7 @@ export const services = [
     {
         img: bobcut,
         name: 'bobcut',
-        category:'Beardcut',
+        category:'Haircut',
         price:'200₹',
         id:1,
 
@@ -122,21 +128,13 @@ export const services = [
 
 
     
-    {
-        img:buzzcut,
-        name:'buzzcut',
-        category:'Haircut',
-        price:'200₹',
-        id:6
-
-    },
-    
+   
     {
         img:lobcut,
         name:'lobcut',
         category:'Haircut',
         price:'200₹',
-        id:7
+        id:6
 
     },
     
@@ -147,7 +145,7 @@ export const services = [
         name:'quiffcut',
         category:'Haircut',
         price:'200₹',
-        id:8
+        id:7
 
     },
     
@@ -156,7 +154,118 @@ export const services = [
         name:'shagcut',
         category:'Haircut',
         price:'200₹',
+        id:8
+
+    },
+
+
+    {
+        img:boxbeard,
+        name:'boxbeardt',
+        category:'Beardcut',
+        price:'200₹',
         id:9
+
+    },
+
+    {
+        img:chinestripbeard,
+        name:'chinestrip beard',
+        category:'Beardcut',
+        price:'200₹',
+        id:10
+
+    },
+
+    {
+        img:cleanshave,
+        name:'cleanshave',
+        category:'shaving',
+        price:'200₹',
+        id:11
+
+    },
+
+
+    {
+        img:dryshave,
+        name:'dryshave',
+        category:'shaving',
+        price:'150₹',
+        id:12
+
+    },
+
+    {
+        img:foamshave,
+        name:'foamshave',
+        category:'shaving',
+        price:'250₹',
+        id:13
+
+    },
+
+    {
+        img:goteebeard,
+        name:'goteebeard',
+        category:'Beardcut',
+        price:'300₹',
+        id:14
+
+    },
+
+    {
+        img:stubblebeard,
+        name:'stubblebeard',
+        category:'Beardcut',
+        price:'120₹',
+        id:15
+
+    },
+    {
+        img:texturebobcut,
+        name:'textutebobcut',
+        category:'Haircut',
+        price:'220₹',
+        id:16
+
+    },
+
+    {
+        img:clockbeard,
+        name:'clockbeard',
+        category:'Beardcut',
+        price:'270₹',
+        id:17
+
+    },
+
+    {
+        img:wetshave,
+        name:'wetshave',
+        category:'shaving',
+        price:'80₹',
+        id:18
+
+    },
+
+
+    {
+        img:pixiecut,
+        name:'pixiecut',
+        category:'Haircut',
+        price:'230₹',
+        id:19
+
+    },
+
+
+    {
+        img:anchorbeard,
+        name:'anchorbeard',
+        category:'Beardcut',
+        price:'280₹',
+        id:20
 
     },
 ]

@@ -1,29 +1,33 @@
 .Services{
-    
     background-color: rgb(224, 197, 197);
+    width: 100%;
+    border: 2px solid;
+    
+    
+    
+}
+
+.sertxt{
+    font-size: 24px;
+    padding: 20px;
 }
 .Services h1{
     text-align: center;
 }
 .category{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
     text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15rem;
 }
-.container_category{
-   
-overflow: hidden;
-}
+
+
 .container_category img{
     width: 150px;
     height: 150px;
-}
-
-
-.serimg{
-    width: 18rem;
-    height: 18rem;
-    box-shadow: 3px 4px 5px;
+    cursor: pointer;
 }
 
 .activecategory{
@@ -31,11 +35,12 @@ overflow: hidden;
 }
 
 .servicecontainer{
-
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
      margin-top: 3rem;
      row-gap: 50px;
      position: relative;
-     left: 2rem;
+     left: 13px;
+     
 }
+

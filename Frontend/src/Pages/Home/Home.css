@@ -1,0 +1,49 @@
+.Home{
+    height: 100vh;
+    
+}
+
+.heroimg{
+    width: 98.7vw;
+    height: 100vh;
+}
+.wrap{
+    width: 98.7vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 255, 0.31);
+    z-index: 1;
+    position: absolute;
+    top: 4rem;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.wrap .txt{
+    font-size: 100px;
+    position: absolute;
+    left: 15%;
+    top: 16%;
+    width: 35%;
+    font-weight: bolder;
+    color: white;
+}
+.get{
+    width: 170px;
+    height: 55px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 12rem;
+    right: 17rem;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.get:hover{
+    background-color: orangered;
+    color: white;
+
+}
