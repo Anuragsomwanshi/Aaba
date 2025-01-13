@@ -1,19 +1,22 @@
 .nav{
     height: 4rem;
-    border-bottom: 2px solid;
-   
-   
-    
 }
 .navmenu{
     display: flex;
     justify-content: space-evenly;
     height: 100%;
     align-items: center;
-    
-   
-    
-    
+}
+
+.menu-icon{
+    display: none;
+}
+
+.nav-contain{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
 }
 
  .logo{
@@ -27,26 +30,19 @@
     width: 50px;
     cursor: pointer;
 }
-.navmenu .menu{
+.navmenu .nav-contain .menu{
     text-decoration: none;
-    transition: 5s;
-    
-
 }
-.navmenu .menu:hover{
+.navmenu .nav-contain .menu:hover{
     border-bottom: 1px solid orangered;
 }
 
-
-
 .btnsign{
-    
     width: 100px;
     height: 42px;
     border: none;
     transition: 0.5s;
     cursor: pointer;
-    
 }
 .btnsign:hover{
     background-color: orangered;
@@ -54,4 +50,38 @@
 }
 .logo:hover{
     transform: scale(1.2);
+}
+
+.crossimg{
+    display: none;
+}
+
+@media(max-width:730px){
+    .nav-contain{
+    background-color: rgba(255, 166, 0, 0.627);
+    width: 13rem;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    align-items:center;
+}
+
+    .menu-icon{
+        display: block;
+        width: 2rem;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+     }
+
+    .crossimg{
+        display:block;
+        width:2rem;
+        position: absolute;
+        right:0;
+        top:0;
+    }
 }
