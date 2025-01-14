@@ -1,0 +1,22 @@
+
+.sidebar{
+    width: 16%;
+    min-height: 100vh;
+    border: 2px solid;
+    border-top: 0;
+}
+.sideoptions{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+.sideoption{
+    text-align: center;
+}
+.sideoption img{
+    width: 3rem;
+    cursor: pointer;
+}

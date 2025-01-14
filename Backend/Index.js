@@ -12,7 +12,7 @@ app.use(cors());
 connectDB();
 
 
-app.use('/api/item',itemRouter);
+app.use('/item',itemRouter);
 app.use('/images',express.static('uploads'));
 
 app.get('/',(req,res)=>{

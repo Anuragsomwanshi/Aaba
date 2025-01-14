@@ -13,15 +13,17 @@ const itemSchema = new mongoose.Schema({
         require:true,
     },
 
-    image:{
-        type:String,
-        require:true,
-    },
+    
 
     category:{
         type:String,
         require:true,
-    }
+    },
+
+    image:{
+        type:String,
+        require:true,
+    },
 })
 
 const itemModel = mongoose.models.item || mongoose.model('item',itemSchema);
