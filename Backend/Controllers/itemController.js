@@ -37,7 +37,7 @@ const listItem = async(req,res) =>{
     try{
 
         const items = await itemModel.find({});
-        res.json({success:true,data:items})
+        res.json({success:true,data:items});
 
 
     } catch(error){

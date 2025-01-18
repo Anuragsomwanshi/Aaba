@@ -1,0 +1,26 @@
+.list-format img{
+    width: 7rem;
+}
+
+.form-col{
+    border: 2px solid;
+    width: 90%;
+}
+.list-format{
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    font-size: 22px;
+}
+.list-format:hover{
+    background-color: silver;
+}
+
+.cut-list{
+    cursor: pointer;
+    font-weight:500;
+    font-size: 22px;
+   
+
+}

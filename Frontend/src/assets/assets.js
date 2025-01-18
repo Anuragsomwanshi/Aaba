@@ -57,7 +57,7 @@ export const category_List = [
     },
 
     {
-        catName: 'Hair Treatments',
+        catName: 'Hair_Treatments',
         catImg: hairtreatment
     },
 

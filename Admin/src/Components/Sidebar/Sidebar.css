@@ -1,22 +1,40 @@
 
 .sidebar{
     width: 16%;
-    min-height: 100vh;
-    border: 2px solid;
+    min-height: 80vh;
+    border: 1px solid;
     border-top: 0;
 }
 .sideoptions{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
-    height: 100vh;
+    height: 95vh;
     align-items: center;
 }
 
 .sideoption{
     text-align: center;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.sideoption.active{
+    border: 1px solid orangered;
 }
 .sideoption img{
     width: 3rem;
     cursor: pointer;
+}
+
+@media(max-width:900px){
+
+    .sideoption p{
+        display: none;
+
+    }
+
+    .sideoption img{
+        width: 2rem;
+    }
 }

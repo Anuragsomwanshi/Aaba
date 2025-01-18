@@ -12,3 +12,12 @@ a{
 .app-content{
     display: flex;
 }
+
+
+.form-col{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}

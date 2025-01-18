@@ -1,0 +1,50 @@
+
+
+.add-serv{
+
+    width: 70%;
+    margin: 25px;
+    font-size: 17px;
+    
+}
+
+.add-serv form{
+    gap: 30px;
+}
+
+.addimgupload img{
+    width: 120px;
+    
+}
+
+.add-sername, .add-sercategory-price{
+
+    width: 40%;
+}
+
+
+
+.form-col input,select{
+    padding: 8px;
+}
+
+
+.add-sercategory-price{
+    display: flex;
+    gap: 30px;
+}
+
+.add-sercategory, .serprice{
+    width: 44%;
+}
+
+
+.addbtn{
+    width: 40%;
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    
+}

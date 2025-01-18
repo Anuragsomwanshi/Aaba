@@ -1,4 +1,13 @@
 .navbar h1{
     color: orangered;
+    font-size: 3rem;
+    
 
+}
+
+@media(max-width:900px){
+    .navbar h1{
+
+        font-size: 2rem;
+    }
 }

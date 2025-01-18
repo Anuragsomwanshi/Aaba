@@ -1,27 +1,28 @@
 import React from "react";
 import "./Sidebar.css";
 import { assets } from "../../assets/assets";
+import { NavLink } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sideoptions">
 
-        <div className="sideoption">
+        < NavLink to='/add' className="sideoption">
           <img src={assets.add_icon} alt="" />
           <p>Add Service</p>
-        </div>
+        </NavLink>
 
 
-        <div className="sideoption">
+        < NavLink to="/list" className="sideoption">
           <img src={assets.list_item} alt="" />
           <p>List  Service</p>
-        </div>
+        </NavLink>
 
 
-        <div className="sideoption">
+        <NavLink to='/reserved' className="sideoption">
           <img src={assets.reserved} alt="" />
           <p>Service Reserved</p>
-        </div>
+        </NavLink>
 
       </div>
     </div>
