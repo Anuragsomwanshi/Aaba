@@ -56,6 +56,30 @@
     display: none;
 }
 
+.navprofile{
+   position: relative;
+   border: 2px solid;
+   width: 10rem;
+   
+
+}
+.navprofile img{
+    width: 4rem;
+
+}
+
+.nav-dropdown{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.nav-dropdown img{
+    width: 2rem;
+    
+}
+
 @media(max-width:730px){
     .nav-contain{
     background-color: rgba(255, 166, 0, 0.627);

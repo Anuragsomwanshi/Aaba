@@ -7,6 +7,7 @@ const itemSchema = new mongoose.Schema({
         require:true,
 
     },
+   
 
     price:{
         type:Number,

@@ -7,6 +7,9 @@ const StoreContextProvider = (props) =>{
 
 
     const [cartItems,setCartItems] = useState({});
+    const url = 'http://localhost:5000'
+
+    const [token,setToken] = useState("");
     
 
 
@@ -41,6 +44,9 @@ const addcart = (itemId)=>{
         setCartItems,
         addcart,
         removecart,
+        url,
+        token,
+        setToken
         
 
     }

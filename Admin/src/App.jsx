@@ -11,6 +11,8 @@ import Reserved from './Pages/Reserved/Reserved'
 import { ToastContainer} from 'react-toastify';
 
 function App() {
+
+  const url = 'http://localhost:5000'
   return (
     <div>
       <ToastContainer/>
@@ -21,9 +23,9 @@ function App() {
 
         <Sidebar />
         <Routes>
-          <Route path='/add' element={<Add/>} />
-          <Route path='/list' element={ <List/> } />
-          <Route path='/reserved' element={ <Reserved/> } />
+          <Route path='/add' element={<Add url={url}  />} />
+          <Route path='/list' element={ <List  url={url} /> } />
+          <Route path='/reserved' element={ <Reserved  url={url} /> } />
 
         </Routes>
 

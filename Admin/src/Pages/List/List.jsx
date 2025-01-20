@@ -2,22 +2,38 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import './List.css'
-const List = () => {
-  const url = "http://localhost:5000";
+const List = ({url}) => {
+  
 
   const [servlist, setServlist] = useState([]);
 
   const fetchservice = async () => {
     const response = await axios.get(`${url}/item/list`);
-    console.log(response.data);
+    
 
     if (response.data.success) {
-      console.log(response.data);
+      
       setServlist(response.data.data);
     } else {
       toast.error("error");
     }
   };
+
+  const removeitem = async(itemid)=>{
+
+    const response = await axios.post(`${url}/item/remove/`,{id:itemid});
+    await fetchservice();
+
+    if(response.data.success){
+      toast.success(response.data.msg);
+
+    }
+    else{
+      toast.error('error');
+    }
+
+
+  }
 
   useEffect(() => {
     fetchservice();
@@ -34,6 +50,7 @@ return(
      <b>Price</b>
      <b>Action</b>
     </div>
+    <hr />
 
     {servlist.map((item,index)=>{
 
@@ -43,7 +60,7 @@ return(
         <p>{item.name}</p>
         <p>{item.category}</p>
         <p>{item.price}</p>
-        <p  className="cut-list">X</p>
+        <p onClick={()=>removeitem(item._id)}  className="cut-list">X</p>
 
 
       </div> )
