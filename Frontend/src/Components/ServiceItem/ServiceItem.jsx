@@ -2,9 +2,9 @@ import React, { useContext,} from "react";
 import "./ServiceItem.css";
 import add from '../../assets/add.jpg'
 import { StoreContext } from "../Context/StoreContext";
-const ServiceItem = ({id, name, image, price }) => {
+const ServiceItem = ({id, name,image,price}) => {
 
-  const {addcart} = useContext(StoreContext);
+  const {addcart,url} = useContext(StoreContext);
 
   
 
@@ -12,7 +12,7 @@ const ServiceItem = ({id, name, image, price }) => {
   return (
     <div className="ser-item">
       <div className="ser-img">
-        <img className="serimg"src={image}alt="" />
+        <img className="serimg"src={url+"/images/"+image}alt="" />
         <img className="add" src={add}onClick={()=>addcart(id)} alt=" "/>
         
       </div>

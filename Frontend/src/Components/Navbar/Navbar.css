@@ -58,25 +58,23 @@
 
 .navprofile{
    position: relative;
-   border: 2px solid;
-   width: 10rem;
+   display: flex;
+   width: 8rem;
+   justify-content: space-evenly;
+
    
 
 }
-.navprofile img{
-    width: 4rem;
 
+.img-profile{
+    width: 3rem;
+    
 }
 
-.nav-dropdown{
-    position: absolute;
-    display: none;
-    right: 0;
-    z-index: 1;
-}
-
-.nav-dropdown img{
+.img-logout{
+    
     width: 2rem;
+    cursor: pointer;
     
 }
 

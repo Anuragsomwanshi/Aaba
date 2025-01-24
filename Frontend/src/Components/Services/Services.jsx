@@ -7,7 +7,7 @@ import ServiceItem from '../ServiceItem/ServiceItem'
 
 
 const Services = () => {
-  const {services} = useContext(StoreContext);
+  const {serviceList} = useContext(StoreContext);
   const [category,setCategory] = useState('All');
   
   return (
@@ -33,12 +33,12 @@ const Services = () => {
         <h1>Top Services Near You</h1>
       <div className='servicecontainer'>
         
-        { services.map((item,index)=>{
+        { serviceList.map((item,index)=>{
 
           if(category ==='All'|| category === item.category){
             return(
 
-              <ServiceItem key={index} id={item.id} name={item.name} image={item.img} price={item.price}  /> 
+              <ServiceItem key={index} id={item._id} name={item.name}  image={item.image} price={item.price}  /> 
             )
           }
 

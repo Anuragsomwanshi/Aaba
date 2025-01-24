@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState} from "react";
-import { services } from "../../assets/assets";
+import axios from "axios"
 
 export const StoreContext =  createContext(null);
 
@@ -10,6 +10,8 @@ const StoreContextProvider = (props) =>{
     const url = 'http://localhost:5000'
 
     const [token,setToken] = useState("");
+
+    const [serviceList,setServiceList] = useState([]);
     
 
 
@@ -26,11 +28,29 @@ const addcart = (itemId)=>{
 
  
 
+  const fetchdata = async () =>{
+
+    const response = await axios.get(url+"/item/list");
+    setServiceList(response.data.data);
+
+
+
+  }
+
  useEffect(()=>{
 
-    console.log(cartItems)
+   
 
- },[cartItems])
+    async function loadData(){
+        await fetchdata();
+
+        if(localStorage.getItem("token")){
+            setToken(localStorage.getItem("token"));
+        }
+    }
+    loadData();
+
+ },[])
 
  
 
@@ -39,7 +59,7 @@ const addcart = (itemId)=>{
 
 
     const contextValue = {
-        services,
+        serviceList,
         cartItems,
         setCartItems,
         addcart,

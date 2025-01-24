@@ -30,12 +30,11 @@ const Navbar = ({setLogin}) => {
            
              <Link to={'/cart'}><img className='cartimg'  src={Cart} alt="" /></Link>
 
-             {!token?  <button onClick={()=> setLogin(true)} className='btnsign'>LogIn</button>: <div className='navprofile'>
-              <img src={profile} alt="" />
+             {!token?  <button onClick={()=> setLogin(true)} className='btnsign'>LogIn</button> : <div className='navprofile'>
+              <img   className='img-profile' src={profile} alt="" />
+               <img  onClick={()=>setToken('')} className='img-logout' src={logout} alt=""/> 
 
-              <ul className='nav-dropdown'>
-                <li> <img src={logout} alt=""/></li>
-              </ul>
+             
              </div> }
            
         
