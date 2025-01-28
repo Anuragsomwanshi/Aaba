@@ -19,11 +19,7 @@ const Sidebar = () => {
         </NavLink>
 
 
-        <NavLink to='/reserved' className="sideoption">
-          <img src={assets.reserved} alt="" />
-          <p>Service Reserved</p>
-        </NavLink>
-
+       
       </div>
     </div>
   );

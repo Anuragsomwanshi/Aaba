@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import "./Navbar.css"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Cart from '../../assets/Cart.jpg'
 import menu_icon from '../../assets/menu-icon.png'
 import cross from '../../assets/cross.jpg'
@@ -13,7 +13,8 @@ import logout from  '../../assets/logout.png';
 
 const Navbar = ({setLogin}) => {
   
-  const {token ,setToken} = useContext(StoreContext);
+  const {token ,setToken} = useContext(StoreContext); 
+  const navigate = useNavigate();
   return (
     <div className='nav'>
       <div className="navmenu">
@@ -32,7 +33,7 @@ const Navbar = ({setLogin}) => {
 
              {!token?  <button onClick={()=> setLogin(true)} className='btnsign'>LogIn</button> : <div className='navprofile'>
               <img   className='img-profile' src={profile} alt="" />
-               <img  onClick={()=>setToken('')} className='img-logout' src={logout} alt=""/> 
+               <img  onClick={()=> [setToken(''),navigate('/')] } className='img-logout' src={logout} alt=""/> 
 
              
              </div> }
