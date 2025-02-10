@@ -1,0 +1,22 @@
+.place-service{
+    height: 100%;
+    border: 2px solid;
+    text-align: center;
+    
+    
+}
+
+.userinfo{
+    margin: 20px;
+    width: 100%;
+    padding: 10px;
+    
+}
+
+.userinfo input{
+    padding: 20px;
+    margin: 5px;
+    width: 30%;
+    
+    
+}

@@ -6,6 +6,7 @@ import userRouter from './routes/userRoute.js';
 
 import 'dotenv/config'
 import cartRouter from './routes/cartRoute.js';
+import serviceRouter from './routes/serviceRoute.js';
 
 const app = express()
 const port = process.env.port||5000;
@@ -20,6 +21,7 @@ app.use('/item',itemRouter);
 app.use('/images',express.static('uploads'));
 app.use('/user',userRouter);
 app.use('/cart',cartRouter);
+app.use('/reserved',serviceRouter);
 
 
 app.get('/',(req,res)=>{

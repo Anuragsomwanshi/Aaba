@@ -1,0 +1,29 @@
+.myservice h2{
+    text-align: center;
+    margin: 40px;
+}
+.img-placeserv{
+    width: 50px;
+    margin: 10px;
+
+}
+
+.head-serv{
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 10px 0 10px 0;
+
+}
+
+
+.subserv{
+    
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-weight: 500;
+}

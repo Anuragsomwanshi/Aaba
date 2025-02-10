@@ -1,40 +1,61 @@
-import React from 'react'
-import './Contact.css'
-import phone from '../../assets/phone-icon.png'
-import location from '../../assets/location-icon.png'
-import mail from '../../assets/mail-icon.png'
+import React from "react";
+import "./Contact.css";
+import phone from "../../assets/phone-icon.png";
+import location from "../../assets/location-icon.png";
+import mail from "../../assets/mail-icon.png";
 
 const Contact = () => {
   return (
-    <div id='Contact' className='Contact'>
-      <h1>Contact</h1>
+    <div id="Contact" className="Contact">
+      <div className="contact-col-1">
+        <h1>Contact</h1>
+        <div className="contact-col">
+          <form>
+            <label>Your Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+            <label>Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Enter Your Mobile number."
+              required
+            />
 
-      <div className='contact-col-1'>
-
-
-        
-      </div>
-
-      <div className="contact-col-2">
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit id, earum hic deleniti voluptates consequuntur dicta sequi laboriosam sed itaque, quae, molestias autem neque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores debitis exercitationemcorporis vitae magnam impedit maxime est dicta! Asperiores.</p>
-         <div className="address">
-          <p> <img src={phone} alt="" /> 899999</p>
-          <p> <img src={mail} alt="" />  raghunath@gmail.com</p>
-          <p> <img src={location} alt="" /> mataji Nagar Latur 413512</p>
-
-          </div>
-
-         
-          
-         
-         
+            <label>Write your msg here</label>
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Enter Your msg"
+              required
+            ></textarea>
+            <button type="submit" className="submit-btn">
+              Submit Now
+            </button>
+          </form>
         </div>
 
 
+        <div className="address">
+         
+            <img src={phone} alt="" /><p> 91+980065408</p>
+          
+            <img src={mail} alt="" /><p>aabamensparlor@gmai.com</p>
+            
+            <img src={location} alt="" /><p>ring road Latur 413512</p>
+        </div>
+
+
+
+      </div>
+
       
     </div>
-  ) 
-}
+  );
+};
 
-export default Contact
+export default Contact;

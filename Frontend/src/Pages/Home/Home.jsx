@@ -13,7 +13,7 @@ const Home = () => {
         <img className="heroimg" src={hero} alt="" />
 
         <div className="wrap">
-          <button className="get">Get In Touch {">>"} </button>
+          <button className="get">   <a href="#Contact"> Get In Touch {">>"} </a></button>
           <div className="txt">LOOK STYLISH AS YOUR WISH</div>
         </div>
       </div>

@@ -1,86 +1,87 @@
-.nav{
+.nav {
     height: 4rem;
 }
-.navmenu{
+.navmenu {
     display: flex;
     justify-content: space-evenly;
     height: 100%;
     align-items: center;
 }
 
-.menu-icon{
+.menu-icon {
     display: none;
 }
 
-.nav-contain{
+.nav-contain {
     width: 50%;
     display: flex;
     justify-content: space-evenly;
     font-size: 20px;
 }
 
- .logo{
+.logo {
     text-decoration: none;
     font-weight: 600;
-    color:orangered;
+    color: orangered;
     transition: 0.5s;
-   font-size: 44px;
+    font-size: 44px;
 }
-.cartimg{
+.cartimg {
     width: 50px;
     cursor: pointer;
 }
-.navmenu .nav-contain .menu{
+.navmenu .nav-contain .menu {
     text-decoration: none;
 }
-.navmenu .nav-contain .menu:hover{
+.navmenu .nav-contain .menu:hover {
     border-bottom: 1px solid orangered;
 }
 
-.btnsign{
+.img-serv{
+
+  width: 40px;
+}
+
+.btnsign {
     width: 100px;
     height: 42px;
-    border: none;
-    transition: 0.5s;
-    cursor: pointer;
+    padding: 0;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
 }
-.btnsign:hover{
-    background-color: orangered;
-    color: white;
+.btnsign:hover {
+  background-color: orangered;
+  color: white;
 }
-.logo:hover{
-    transform: scale(1.2);
-}
-
-.crossimg{
-    display: none;
+.logo:hover {
+  transform: scale(1.2);
 }
 
-.navprofile{
-   position: relative;
-   display: flex;
-   width: 8rem;
-   justify-content: space-evenly;
-
-   
-
+.crossimg {
+  display: none;
 }
 
-.img-profile{
-    width: 3rem;
-    
+.navprofile {
+  position: relative;
+  display: flex;
+  width: 14rem;
+  justify-content: space-evenly;
+  cursor: pointer;
 }
 
-.img-logout{
-    
-    width: 2rem;
-    cursor: pointer;
-    
+.img-profile {
+  width: 3rem;
 }
 
-@media(max-width:730px){
-    .nav-contain{
-    background-color: rgba(255, 166, 0, 0.627);
+.img-logout {
+  width: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 730px) {
+  .nav-contain {
+    background-color: rgba(255, 166, 0, 0.891);
     width: 13rem;
     height: 100%;
     flex-direction: column;
@@ -88,22 +89,75 @@
     top: 0;
     right: 0;
     z-index: 4;
-    align-items:center;
+    align-items: center;
+    transition:0.5s;
+    
+  }
+
+  
+
+  .menu-icon {
+    display: block;
+    width: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+  }
+
+  .navhide{
+    display: none;
+
+  }
+
+  .crossimg {
+    display: block;
+    width: 2rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
 }
 
-    .menu-icon{
-        display: block;
-        width: 2rem;
-        cursor: pointer;
-        position: absolute;
-        right: 30px;
-     }
+@media (max-width: 550px) {
+  .nav-contain {
+    width: 10rem;
+    top: 0;
+    right: 0;
+    z-index: 4;
+  }
 
-    .crossimg{
-        display:block;
-        width:2rem;
-        position: absolute;
-        right:0;
-        top:0;
-    }
+  .btnsign {
+    width: 90px;
+    height: 42px;
+    position: relative;
+    right: 50px;
+  }
+
+  .navmenu{
+    justify-content: space-around;
+  }
+}
+
+@media(max-width:420px){
+
+    .cartimg {
+        width: 35px;
+        
+      }
+
+      .btnsign {
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+        position: relative;
+        right: 50px;
+      }
+
+      .menu-icon{
+        width: 1.5rem;
+      }
+
+    
+
 }

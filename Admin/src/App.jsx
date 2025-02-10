@@ -4,11 +4,12 @@ import Sidebar from './Components/Sidebar/Sidebar'
 import {Route, Routes} from 'react-router-dom'
 import Add from './Pages/Add/Add'
 import List from './Pages/List/List'
-import Reserved from './Pages/Reserved/Reserved'
+
 
 
 
 import { ToastContainer} from 'react-toastify';
+import Reserved from './Pages/Reserved/Reserved'
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
         <Routes>
           <Route path='/add' element={<Add url={url}  />} />
           <Route path='/list' element={ <List  url={url} /> } />
-          <Route path='/reserved' element={ <Reserved  url={url} /> } />
+          <Route path='/reserved' element={ <Reserved url={url}/> } />
+          
 
         </Routes>
 

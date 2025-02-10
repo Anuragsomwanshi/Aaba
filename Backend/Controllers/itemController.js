@@ -18,7 +18,7 @@ const addItem = async(req,res)=>{
     try{
 
         await item.save();
-        res.json({ success:true,msg:"item added"})
+        res.json({ success:true,msg:"Service added"})
 
 
     } catch(error){
@@ -61,7 +61,7 @@ const removeItem = async (req,res)=>{
         fs.unlink(`uploads/${item.image}`,()=>{})
 
         await itemModel.findByIdAndDelete(req.body.id);
-        res.json({success:true,msg:"Item removed"})
+        res.json({success:true,msg:"Service removed"})
 
 
     }
@@ -69,7 +69,7 @@ const removeItem = async (req,res)=>{
     catch(error){
 
         console.log(error);
-        res.json({success:false,msg:"food has not removed"})
+        res.json({success:false,msg:"Service has not removed"})
 
 
     }

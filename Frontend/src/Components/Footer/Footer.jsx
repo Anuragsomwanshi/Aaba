@@ -8,7 +8,7 @@ const Footer = () => {
           <p>Alll right reserved @ | 2025 created by anuragsomwanshi</p>
 
          
-          <a href="#Home"> <button className='upword'>^</button></a>
+          <button className='upword'> <a href="#Home">^</a> </button>
          </div>
           </>
   )

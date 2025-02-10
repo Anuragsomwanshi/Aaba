@@ -1,74 +1,117 @@
 .Contact{
     height: 100vh;
     background-color: rgb(209, 190, 190);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .contact-col-1{
-  height: 50%;
-  width: 70%;
-  margin-top: 2rem;
-  text-align: center;
-  
-  
-  
-  
-  
-}
-.contact-col-1 input,textarea,button{
-    display: block;
-    width: 50%;
-    place-self: center;
-    background: #ebecfe;
-    padding: 15px;
-    border: 0;
-    outline: 0;
-    margin-bottom: 10px;
-    margin-top: 2px;
-    resize: none;
-    align-items: center;
     
-    
+    margin: 10px;
+    padding: 5px;
 }
 
-.btn{
-    width: 14%;
-    height: 4%;
-    padding: 20px;
-    cursor: pointer;
-    background-color: rgb(115, 192, 115);
+.contact-col{
+    text-align: start;
+    height: 80%;
+    padding: 5px;
+    width: 60%;
+    place-self:center;
+   
 
-    
 }
-
-.contact-col-2{
-    margin-top: 50px;
-    border: 2px solid;
-    width: 100%;
-    height: 50%;
-}
-.contact-col-2 >p{
-    font-size: 20px;
-    text-align: center;
-}
-.address{
-    border: 2px solid;
+.contact-col form input{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    position: relative;
-    left: 10%;
-    width: 50%;
-    height: 70%;
-}
-.address img{
-    width: 30px;
-    
     
 
 }
+.contact-col form input,textarea{
+    margin: 10px;
+    padding: 20px;
+    width: 90%;
+    border: none;
+    border-radius:4px;
+    
+}
+
+.submit-btn{
+    margin: 12px;
+    padding: 12px;
+    background-color:white;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+
+}
+
+.submit-btn:hover{
+    background-color: rgb(120, 184, 120);
+    
+}
+
+
+
+.address{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.address img{
+    width: 22px;
+    margin:0 10px 0 40px;
+    
+    
+}
+
+@media(max-width:750px){
+
+    .contact-col{
+        text-align: start;
+        height: 80%;
+        padding: 5px;
+        width: 100%;
+        border: 2px solid;
+        place-self:center;
+       
+    
+    }
+    .address{
+        border: 2px solid;
+        width: 100%;
+        margin:0px;
+    }
+
+    .address img{
+        width: 17px;
+        margin:0 7px 0 30px;
+        
+        
+    }
+
+
+    
+}
+
+@media(max-width:650px){
+
+    .address{
+        flex-direction: column;
+        
+    }
+
+    .address img{
+        width: 14px;
+        margin-top:12px;
+        
+        
+    }
+}
+
+
+
+
 
 

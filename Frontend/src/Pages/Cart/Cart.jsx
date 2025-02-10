@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
 import "./Cart.css";
 import { StoreContext } from "../../Components/Context/StoreContext";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
-  const { cartItems, removecart, serviceList, url } = useContext(StoreContext);
+  const { cartItems, removecart, serviceList, url} = useContext(StoreContext);
+  const navigate = useNavigate();
 
   return (
     <div className="cart">
@@ -13,10 +15,11 @@ const Cart = () => {
           <p>Title</p>
           <p>Price</p>
           <p>Remove</p>
+          
         </div>
         <br />
         <hr />
-        {serviceList.map((item, index) => {
+        {serviceList.map((item, index) =>{
          
 
           if (cartItems[item._id] > 0) {
@@ -29,7 +32,7 @@ const Cart = () => {
                     alt=""
                   />
                   <p>{item.name}</p>
-                  <p>{item.price}</p>
+                  <p>{item.price+"₹"}</p>
                   <p onClick={() => removecart(item._id)} className="cut">
                     X
                   </p>
@@ -41,6 +44,13 @@ const Cart = () => {
         })}
       </div>
       <hr />
+
+      <div className="btn-place">
+        
+        <button onClick={()=>navigate('/reserved')} >place service</button>
+      
+      </div>
+      
     </div>
   );
 };

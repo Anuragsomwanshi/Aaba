@@ -67,7 +67,7 @@ export const category_List = [
     },
 
     {
-        catName: 'Facial and skincare',
+        catName: 'Facial & skincare',
         catImg: facial
     },
 
