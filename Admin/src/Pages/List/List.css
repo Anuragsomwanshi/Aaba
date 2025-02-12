@@ -23,3 +23,56 @@
    
 
 }
+
+
+@media(max-width:800px){
+
+    .list-format img{
+        width: 4rem;
+    }
+
+    .list-format{
+        font-size: 15px;
+    }
+
+    .cut-list{
+        font-size: 20px;
+    }
+
+
+}
+
+@media(max-width:620px){
+
+    .list-format img{
+        width: 3rem;
+    }
+
+    .list-format{
+        font-size: 13px;
+    }
+
+    .cut-list{
+        font-size: 18px;
+    }
+
+
+}
+
+@media(max-width:460px){
+
+
+    .list-format img{
+        width: 2rem;
+    }
+
+    .list-format{
+        font-size: 12px;
+    }
+
+    .cut-list{
+        font-size: 15px;
+    }
+
+
+}

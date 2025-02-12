@@ -19,7 +19,7 @@ const Cart = () => {
         </div>
         <br />
         <hr />
-        {serviceList.map((item, index) =>{
+        {serviceList.map((item,index) =>{
          
 
           if (cartItems[item._id] > 0) {
@@ -47,7 +47,7 @@ const Cart = () => {
 
       <div className="btn-place">
         
-        <button onClick={()=>navigate('/reserved')} >place service</button>
+        <button onClick={()=>navigate('/placeService')} >place service</button>
       
       </div>
       

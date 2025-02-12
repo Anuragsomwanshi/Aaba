@@ -4,7 +4,7 @@ import add from '../../assets/add.jpg'
 import { StoreContext } from "../Context/StoreContext";
 const ServiceItem = ({id, name,image,price}) => {
 
-  const {addcart,url} = useContext(StoreContext);
+  const {addcart,url,token} = useContext(StoreContext);
 
   const [select,setSelect] = useState(false);
 
@@ -12,10 +12,10 @@ const ServiceItem = ({id, name,image,price}) => {
 
  
   return (
-    <div className={`ser-item ${select===true?'blar':" "} `}>
+    <div className={`ser-item ${select===true?"blar":""}`}>
       <div className="ser-img">
         <img className="serimg "src={url+"/images/"+image}alt="" />
-        <img className="add" src={add}onClick={()=> [addcart(id),setSelect(true)]} onDoubleClick={()=>[setSelect(false),removecart(id)]}  alt=" "/>
+        <img className="add" src={add}onClick={()=> !token? alert("For Access More You Should LogIn First"):[addcart(id),setSelect(true)]} onDoubleClick={()=>[setSelect(false),removecart(id)]}  alt=" "/>
         
       </div>
 

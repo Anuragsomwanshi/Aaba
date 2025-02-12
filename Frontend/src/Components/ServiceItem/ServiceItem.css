@@ -5,19 +5,13 @@
   place-self: center;
 }
 
-
-
 .ser-item {
   margin: 20px;
   transition: 0.5s;
- 
 }
 
-.blar{
-background-color: rgb(176, 176, 24);
-    
-
-    
+.blar {
+  background-color: rgb(176, 176, 24);
 }
 .ser-item:hover {
   transform: scale(1.1);
@@ -46,4 +40,157 @@ background-color: rgb(176, 176, 24);
 }
 .add:active {
   transform: scale(1.2);
+}
+
+@media (max-width: 1250px) {
+  .serimg {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .ser-item {
+    margin: 15px;
+  }
+
+  .ser-item:hover {
+    transform: scale(1.1);
+  }
+
+  .nameprice {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .nameprice .price {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .add {
+    left: 170px;
+    bottom: 3rem;
+    width: 2rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .serimg {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .ser-item {
+    margin: 12px;
+  }
+
+  .nameprice {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .nameprice .price {
+    font-size: 23px;
+  }
+  .add {
+    left: -50px;
+    bottom: 2rem;
+    width: 2rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .serimg {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .ser-item {
+    margin: 12px;
+  }
+
+  .nameprice {
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    width: 62%;
+  }
+
+  .nameprice .price {
+    font-size: 22px;
+  }
+  .add {
+    left: -38px;
+    bottom: 2rem;
+    width: 2rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .nameprice {
+    width: 70%;
+
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 760px) {
+  .serimg {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .ser-item {
+    margin: 10px;
+  }
+
+  .nameprice {
+    font-size: 16px;
+    font-weight: 500;
+
+    width: 75%;
+  }
+
+  .nameprice .price {
+    font-size: 22px;
+  }
+  .add {
+    left: -38px;
+    bottom: 2rem;
+    width: 2rem;
+  }
+  .add {
+    left: -35px;
+    bottom: 2rem;
+    width: 1.7rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .add {
+    left: -35px;
+  }
+
+  .ser-item {
+    margin: 0px;
+  }
+
+  .nameprice {
+    width: 79%;
+  }
+}
+
+@media (max-width: 585px) {
+  .nameprice {
+    width: 59%;
+  }
+}
+
+@media (max-width: 410px) {
+  .nameprice {
+    width: 69%;
+  }
+
+  .serimg {
+    width: 8rem;
+    height: 8rem;
+  }
 }

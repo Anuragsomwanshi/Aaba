@@ -12,10 +12,12 @@
 
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     font-weight: 700;
     font-size: 22px;
     margin: 10px 0 10px 0;
+    position: relative;
+    left: 100px;
 
 }
 
@@ -24,6 +26,10 @@
     
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     font-weight: 500;
+    margin: 30px;
+    padding: 10px;
+    border: 2px solid;
+    
 }

@@ -49,3 +49,32 @@ button:hover{
   text-align: center;
 
 }
+
+@media(max-width:720px){
+
+
+  .cartitemimg{
+    
+    margin: 7px;
+}
+
+  .carttitle{
+    font-size: 16px;
+    left: 3rem;
+  }
+}
+
+
+@media(max-width:430px){
+
+
+  .cartitemimg{
+    
+    margin: 5px;
+}
+
+  .carttitle{
+    font-size: 14px;
+    left: 2rem;
+  }
+}

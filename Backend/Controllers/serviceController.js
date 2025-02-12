@@ -2,10 +2,10 @@ import reservedModel from "../Models/Reservedmodel.js";
 import userModel from '../Models/userModel.js'
 
 
-// srvice reserved
+// service reserved
 
 
-const reservedService = async (req,res)=>{
+const placeService = async (req,res)=>{
 
     
 
@@ -40,6 +40,7 @@ const userService = async(req,res)=>{
         const service = await reservedModel.find({userId:req.body.userId});
         res.json({success:true,data:service})
         
+        
     } catch (error) {
 
         console.log(error);
@@ -49,4 +50,20 @@ const userService = async(req,res)=>{
 
 }
 
-export{reservedService,userService};
+
+// services for admin
+
+const listServices = async(req,res)=>{
+
+    try {
+        const Services = await reservedModel.find({});
+        res.json({success:true,data:Services})
+    } catch (error) {
+        console.log(error);
+        res.json({success:false,message:"Error"});
+        
+    }
+
+}
+
+export{placeService,userService,listServices};

@@ -1,0 +1,33 @@
+.reserved h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.serv-Items{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 3fr 2fr;
+    margin: 50px;
+    padding: 18px;
+    background-color: orange;
+    align-items: center;
+    font-size: 19px;
+}
+
+.place-img{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+
+@media (max-width:1050px){
+
+    .serv-Items{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       height: 456px;
+       
+    }
+
+    
+}

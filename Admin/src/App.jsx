@@ -26,7 +26,7 @@ function App() {
         <Routes>
           <Route path='/add' element={<Add url={url}  />} />
           <Route path='/list' element={ <List  url={url} /> } />
-          <Route path='/reserved' element={ <Reserved url={url}/> } />
+          <Route path='/service' element={ <Reserved url={url}/> } />
           
 
         </Routes>

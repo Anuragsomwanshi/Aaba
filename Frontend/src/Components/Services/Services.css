@@ -1,7 +1,7 @@
 .Services{
     background-color: rgb(224, 197, 197);
     width: 100%;
-    border: 2px solid;
+    
     
     
     
@@ -60,11 +60,19 @@
      }
 
      .container_category img{
-        width: 200px;
-        height: 200px;
+        width: 12rem;
+    height: 12rem;
         margin: 10px;
         
         
+    }
+
+
+    .servicecontainer{
+        
+        grid-template-columns:  1fr 1fr 1fr ;
+        
+         
     }
 
 
@@ -89,19 +97,36 @@
 
 }
 
-@media(max-width:500px){
+@media(max-width:585px){
 .container_category img{
         width: 100px;
         height: 100px;
         
         
     }
+
+
+
+    .servicecontainer{
+        
+        grid-template-columns:  1fr 1fr;
+         margin-top: 3rem;
+         row-gap: 40px;
+         position: relative;
+         left: 53px;
+         
+    }
 }
 
-@media(max-width:410px){
+@media(max-width:450px){
 
     .category{
         grid-template-columns: 1fr 1fr;
+    }
+
+    .servicecontainer{
+
+        left: 10px;
     }
 
 

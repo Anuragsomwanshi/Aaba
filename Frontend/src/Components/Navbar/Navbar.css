@@ -1,51 +1,50 @@
 .nav {
-    height: 4rem;
+  height: 4rem;
 }
 .navmenu {
-    display: flex;
-    justify-content: space-evenly;
-    height: 100%;
-    align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
 }
 
 .menu-icon {
-    display: none;
+  display: none;
 }
 
 .nav-contain {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
 }
 
 .logo {
-    text-decoration: none;
-    font-weight: 600;
-    color: orangered;
-    transition: 0.5s;
-    font-size: 44px;
+  text-decoration: none;
+  font-weight: 600;
+  color: orangered;
+  transition: 0.5s;
+  font-size: 44px;
 }
 .cartimg {
-    width: 50px;
-    cursor: pointer;
+  width: 50px;
+  cursor: pointer;
 }
 .navmenu .nav-contain .menu {
-    text-decoration: none;
+  text-decoration: none;
 }
 .navmenu .nav-contain .menu:hover {
-    border-bottom: 1px solid orangered;
+  border-bottom: 1px solid orangered;
 }
 
-.img-serv{
-
+.img-serv {
   width: 40px;
 }
 
 .btnsign {
-    width: 100px;
-    height: 42px;
-    padding: 0;
+  width: 100px;
+  height: 42px;
+  padding: 0;
   border: none;
   transition: 0.5s;
   cursor: pointer;
@@ -90,11 +89,8 @@
     right: 0;
     z-index: 4;
     align-items: center;
-    transition:0.5s;
-    
+    transition: 0.5s;
   }
-
-  
 
   .menu-icon {
     display: block;
@@ -104,9 +100,8 @@
     right: 30px;
   }
 
-  .navhide{
+  .navhide {
     display: none;
-
   }
 
   .crossimg {
@@ -127,6 +122,8 @@
     z-index: 4;
   }
 
+  
+
   .btnsign {
     width: 90px;
     height: 42px;
@@ -134,30 +131,45 @@
     right: 50px;
   }
 
-  .navmenu{
+  .navmenu {
     justify-content: space-around;
   }
 }
 
-@media(max-width:420px){
+@media (max-width: 420px) {
+  
 
-    .cartimg {
-        width: 35px;
-        
-      }
+  .logo {
+    font-weight: 400;
+    color: orangered;
+    font-size: 34px;
+  }
 
-      .btnsign {
-        width: 50px;
-        height: 50px;
-        font-size: 12px;
-        position: relative;
-        right: 50px;
-      }
+  .img-serv {
+    width: 30px;
+  }
 
-      .menu-icon{
-        width: 1.5rem;
-      }
+  .navprofile {
+    justify-content: space-evenly;
+  }
+  .img-profile {
+    width: 2.3rem;
+  }
 
+  .menu-icon {
+    right: 2px;
     
+  }
 
+  .cartimg {
+    width: 35px;
+  }
+
+  .btnsign {
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    position: relative;
+    right: 50px;
+  }
 }

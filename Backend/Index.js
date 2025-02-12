@@ -21,7 +21,7 @@ app.use('/item',itemRouter);
 app.use('/images',express.static('uploads'));
 app.use('/user',userRouter);
 app.use('/cart',cartRouter);
-app.use('/reserved',serviceRouter);
+app.use('/service',serviceRouter);
 
 
 app.get('/',(req,res)=>{

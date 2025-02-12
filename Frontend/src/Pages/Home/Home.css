@@ -124,6 +124,15 @@ a{
   }
   
   @media(max-width:450px){
+   
+
+    .wrap{
+
+      height: 72%;
+      width: 99.5%;
+
+
+    }
 
     .wrap .txt{
       

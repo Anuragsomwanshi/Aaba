@@ -49,7 +49,7 @@ const ServiceReserved = () => {
       services:serviceItems,
     }
 
-    let response = await axios.post(url+"/reserved/place",serviceData,{headers:{token}});
+    let response = await axios.post(url+"/service/place",serviceData,{headers:{token}});
     if(response.data.success){
 
      console.log(response.data);
