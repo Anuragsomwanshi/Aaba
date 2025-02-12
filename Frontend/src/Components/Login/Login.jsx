@@ -103,13 +103,13 @@ const LogIn = ({ setLogin }) => {
         {currstate === "LogIn" ? (
           <p>
             create a new account ?{" "}
-            <span onClick={() => setcurrstate("SignUp")}>click here</span>
+            <span className="span-log" onClick={() => setcurrstate("SignUp")}>click here</span>
           </p>
         ) : (
           <p>
             {" "}
             Alearady have an account ?{" "}
-            <span onClick={() => setcurrstate("LogIn")}>LogIn here</span>
+            <span className="span-log" onClick={() => setcurrstate("LogIn")}>LogIn here</span>
           </p>
         )}
       </form>

@@ -20,9 +20,11 @@ const Cart = () => {
         <br />
         <hr />
         {serviceList.map((item,index) =>{
+
+         
          
 
-          if (cartItems[item._id] > 0) {
+          if (cartItems[item._id] > 0){
             return (
               <div key={index}>
                 <div className="carttitle">
@@ -41,6 +43,9 @@ const Cart = () => {
               </div>
             );
           }
+
+          
+          
         })}
       </div>
       <hr />

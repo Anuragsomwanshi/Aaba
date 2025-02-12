@@ -14,13 +14,13 @@
 
 .login-container{
     place-self: center;
-    width: max(26vw,350px);
+    width: max(34vw,350px);
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    padding: 29px;
-    font-size: 13px;
+    gap: 30px;
+    padding: 39px;
+    font-size: 15px;
     animation: fade-in 0.5s;
 }
 
@@ -35,18 +35,29 @@
 .login-input{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 
 }
 .login-input input{
     outline: none;
     border: 1px solid wheat;
-    padding: 10px;
-    border-radius: 4;
+    padding: 20px;
+    
 
 }
 
 .login-container button{
     cursor: pointer;
    background-color: rgb(128, 197, 128);
+}
+
+.log-condition input{
+    width: 15px;
+    height: 15px;
+}
+
+.span-log{
+    color: red;
+    cursor: pointer;
+    font-weight: 700;
 }
