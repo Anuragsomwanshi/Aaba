@@ -33,8 +33,8 @@ const login =  async(req,res) =>{
 
     catch(err){
 
-        console.log(err);
-        res.json({success:false,massage:"error occured"});
+        console.log("show error"+err);
+        res.json({success:false,massage:"error occur"});
 
     }
 
