@@ -7,7 +7,7 @@ const StoreContextProvider = (props) =>{
 
 
     const [cartItems,setCartItems] = useState({});
-    const url = "https://aababackend.onrender.com"
+    const url = "http://localhost:5000"
 
     const [token,setToken] = useState("");
 
